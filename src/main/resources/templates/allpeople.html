@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> allpeople</title>
+</head>
+<body>
+<p> 리스트 전체 출력 </p>
+<div >
+    <tr th:each="people:${people1}">
+        <td><span th:text="${people.getId()}"></span></td>
+        <td><span th:text="${people.getName()}"></span></td>
+        <td><span th:text="${people.getTodo()}"></span></td>
+    </tr>
+
+</div>
+
+</body>
+</html>
